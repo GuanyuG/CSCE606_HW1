@@ -1,1 +1,3 @@
 # CSCE606_HW1
+UIN: 427007578
+Name: Guanyu Gao
