@@ -1,0 +1,176 @@
+ec2-user:~/environment $ cd hw-ruby-intro
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec -e '#sum ' spec/part1_spec.rb
+Run options: include {:full_description=>/\#sum\ /}
+
+Ruby intro part 1
+  #sum
+    should be defined
+    returns correct sum [20 points]
+    works on the empty array [10 points]
+
+Finished in 0.00548 seconds (files took 0.0892 seconds to load)
+3 examples, 0 failures
+
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec -e '#max_2_sum' spec/part1_spec.rb
+Run options: include {:full_description=>/\#max_2_sum/}
+
+Ruby intro part 1
+  #max_2_sum
+    should be defined
+    returns the correct sum [7 points]
+    works even if 2 largest values are the same [3 points]
+    returns zero if array is empty [10 points]
+    returns value of the element if just one element [10 points]
+
+Finished in 0.00741 seconds (files took 0.09038 seconds to load)
+5 examples, 0 failures
+
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec -e '#sum_to_n' spec/part1_spec.rb
+Run options: include {:full_description=>/\#sum_to_n/}
+
+Ruby intro part 1
+  #sum_to_n
+    should be defined
+    returns true when any two elements sum to the second argument [30 points]
+    returns false for any single element array [5 points]
+    returns false for an empty array [5 points]
+
+Finished in 0.00518 seconds (files took 0.09642 seconds to load)
+4 examples, 0 failures
+
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec spec/part1_spec.rb
+
+Ruby intro part 1
+  #sum
+    should be defined
+    returns correct sum [20 points]
+    works on the empty array [10 points]
+  #max_2_sum
+    should be defined
+    returns the correct sum [7 points]
+    works even if 2 largest values are the same [3 points]
+    returns zero if array is empty [10 points]
+    returns value of the element if just one element [10 points]
+  #sum_to_n
+    should be defined
+    returns true when any two elements sum to the second argument [30 points]
+    returns false for any single element array [5 points]
+    returns false for an empty array [5 points]
+
+Finished in 0.01323 seconds (files took 0.08828 seconds to load)
+12 examples, 0 failures
+
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec -e '#hello' spec/part2_spec.rb
+Run options: include {:full_description=>/\#hello/}
+
+#hello
+  should be defined
+  The hello method returns the correct string [30 points]
+
+Finished in 0.00334 seconds (files took 0.09433 seconds to load)
+2 examples, 0 failures
+
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec -e '#starts_with_consonant?' spec/part2_spec.rb
+Run options: include {:full_description=>/\#starts_with_consonant\?/}
+
+#starts_with_consonant?
+  should be defined
+  classifies true cases [10 points]
+  classifies false cases [10 points]
+  works on the empty string [5 points]
+  works on nonletters [5 points]
+
+Finished in 0.00587 seconds (files took 0.08741 seconds to load)
+5 examples, 0 failures
+
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec -e '#binary_multiple_of_4?' spec/part2_spec.rb
+Run options: include {:full_description=>/\#binary_multiple_of_4\?/}
+
+#binary_multiple_of_4?
+  should be defined
+  classifies valid binary numbers [30 points]
+  rejects invalid binary numbers [10 points]
+
+Finished in 0.00474 seconds (files took 0.0889 seconds to load)
+3 examples, 0 failures
+
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec spec/part2_spec.rb
+
+#hello
+  should be defined
+  The hello method returns the correct string [30 points]
+
+#starts_with_consonant?
+  should be defined
+  classifies true cases [10 points]
+  classifies false cases [10 points]
+  works on the empty string [5 points]
+  works on nonletters [5 points]
+
+#binary_multiple_of_4?
+  should be defined
+  classifies valid binary numbers [30 points]
+  rejects invalid binary numbers [10 points]
+
+Finished in 0.01322 seconds (files took 0.08697 seconds to load)
+10 examples, 0 failures
+
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec -e 'getters and setters' spec/part3_spec.rb
+Run options: include {:full_description=>/getters\ and\ setters/}
+
+BookInStock
+  getters and setters
+    should set ISBN [10 points]
+    should set price [10 points]
+    should be able to change ISBN [10 points]
+    should be able to change price [10 points]
+
+Finished in 0.00418 seconds (files took 0.09121 seconds to load)
+4 examples, 0 failures
+
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec -e 'constructor' spec/part3_spec.rb
+Run options: include {:full_description=>/constructor/}
+
+BookInStock
+  constructor
+    should reject invalid ISBN number [10 points]
+    should reject zero price [10 points]
+    should reject negative price [10 points]
+
+Finished in 0.00412 seconds (files took 0.08936 seconds to load)
+3 examples, 0 failures
+
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec -e '#price_as_string' spec/part3_spec.rb
+Run options: include {:full_description=>/\#price_as_string/}
+
+BookInStock
+  #price_as_string
+    should be defined
+    should display 33.95 as "$33.95" [10 points]
+    should display 1.1 as $1.10 [10 points]
+    should display 20 as $20.00 [10 points]
+
+Finished in 0.00485 seconds (files took 0.08983 seconds to load)
+4 examples, 0 failures
+
+ec2-user:~/environment/hw-ruby-intro (master) $ rspec spec/part3_spec.rb
+
+BookInStock
+  should be defined
+  getters and setters
+    should set ISBN [10 points]
+    should set price [10 points]
+    should be able to change ISBN [10 points]
+    should be able to change price [10 points]
+  constructor
+    should reject invalid ISBN number [10 points]
+    should reject zero price [10 points]
+    should reject negative price [10 points]
+  #price_as_string
+    should be defined
+    should display 33.95 as "$33.95" [10 points]
+    should display 1.1 as $1.10 [10 points]
+    should display 20 as $20.00 [10 points]
+
+Finished in 0.01124 seconds (files took 0.09246 seconds to load)
+12 examples, 0 failures
